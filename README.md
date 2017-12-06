@@ -1,3 +1,3 @@
-# ma-forms
+h1 Form UI / Mate Academy
 
-<a href="https://witflash.github.io/ma-forms/app/index.html">Goto Index.html</a>
+[Form UI](https://witflash.github.io/ma-forms/app/index.html)
