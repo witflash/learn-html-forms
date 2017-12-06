@@ -1,0 +1,9 @@
+.container {
+  background-color: tomato;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  color: #333333;
+  font-size: 1.6rem; }
+  .container--medium {
+    width: 800px; }
