@@ -1,9 +1,24 @@
 .container {
-  background-color: tomato;
-  padding: 15px;
-  margin: 20px;
-  text-align: center;
-  color: #333333;
-  font-size: 1.6rem; }
-  .container--medium {
-    width: 800px; }
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white; }
+  .container--page {
+    padding: 20px;
+    margin: 0 auto; }
+  .container__form {
+    margin: 10px; }
+
+.form {
+  display: inline-block;
+  background-color: #f2f5f8;
+  border-radius: 6px; }
+  .form__header {
+    padding: 20px; }
+  .form__content {
+    padding: 0 30px 25px 30px;
+    max-width: 460px;
+    min-width: 300px; }
+  .form__button {
+    margin-bottom: 20px; }
+  .form__input {
+    margin-bottom: 20px; }

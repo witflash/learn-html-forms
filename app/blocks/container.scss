@@ -1,12 +1,15 @@
 .container {
-    background-color: $color-secondary;
-    padding: 15px;
-    margin: 20px;
-    text-align: center;
-    color: $text-color;
-    font-size: $font-size;
+    // display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $color-bg;
+    
+    &--page {
+        padding: 20px;
+        margin: 0 auto;
+    }
 
-    &--medium {
-        width: 800px;
+    &__form {
+        margin: 10px;
     }
 }
