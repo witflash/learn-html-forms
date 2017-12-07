@@ -3,21 +3,11 @@
     background-color: $grey-lighten;
     border-radius: 6px;
 
-    &__header {
-        padding: 20px;
-    }
-
     &__content {
-        padding: 0 30px 25px 30px;
-        max-width: 460px;
-        min-width: 300px;
+        padding: 15px 0 25px 0;
     }
 
-    &__button {
-        margin-bottom: 20px;
-    }
-
-    &__input {
-        margin-bottom: 20px;
+    &__several-button {
+        margin-right: 3%;
     }
 }

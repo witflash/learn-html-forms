@@ -6,46 +6,95 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
 </head>
 <body>
-    <div class="container container--page">
-        <form class="form container__form">
-            <div class="header form__header">Sign Up Big</div>
+    <div class="container container_page">
+
+        <form class="form container__form" method="POST">
+            <div class="header header_bg-1">
+                <p class="header__title header__title_midcenter">SIGN UP</p>
+                <p class="header__title header__title_upright"><a href="#">Already Registered?</a></p>
+            </div>
             <div class="content form__content">
-                <input type="login" class="input-field form__input" placeholder="Login">
-                <input type="password" class="input-fiels form__input" placeholder="Password">
-                <div><input type="submit" class="btn-submit form__button" value="Sign Up"></div>
-            </div>
-            <div class="footer form__footer">
-                <input type="button" class="btn-submit" value="Login via Facebook">
-                <input type="button" class="btn-submit" value="Login via Twitter">
+                <p>
+                    <input type="text" class="input-field input-field_full" placeholder="E-mail or login">
+                </p>
+                <p>
+                    <input type="password" class="input-field input-field_full" placeholder="Password">
+                </p>
+                <p>
+                    <a href="#">Forgot Password?</a>
+                </p>
+                <input type="submit" class="button button_big-blue" value="Sign Up">
+                <p>
+                    <span class="divider"></span>
+                    <span>OR</span>
+                    <span class="divider"></span>
+                </p>
+                <input type="button" class="button button_mid-fb content_several-button" value="Login via Facebook" action="google.com">
+                <input type="button" class="button button_mid-tw content_several-button" value="Login via Twitter">
             </div>
         </form>
-        <form class="form container__form">
-            Sign In Big
+
+        <form class="form container__form" method="POST">
+            <div class="header header_bg-2">
+                <p class="header__title header__title_midcenter">SIGN IN</p>
+                <p class="header__title header__title_upright">
+                    <a href="#">Already Registered?</a>
+                </p>
+            </div>
+            <div class="content form__content">
+                <p>
+                    <input type="text" class="input-field input-field_full" placeholder="E-mail or login">
+                </p>
+                <p>
+                    <input type="password" class="input-field input-field_full" placeholder="Password">
+                </p>
+                <p class="content__remember">
+                    <input type="checkbox" id="remember" class="checkbox">
+                    <label for="remember">Remember password?</label>
+                </p>
+                <input type="submit" class="button button_big-green" value="Sign In">
+                <p>
+                    <span class="divider"></span>
+                    <span>OR</span>
+                    <span class="divider"></span>
+                </p>
+                <input type="button" class="button button_mid-fb content_several-button" value="Login via Facebook" action="google.com">
+                <input type="button" class="button button_mid-tw content_several-button" value="Login via Twitter">
+            </div>
         </form>
+
         <form class="form container__form">
             Sign Up
         </form>
+
         <form class="form container__form">
             Sign In
         </form>
+
         <form class="form container__form">
             Reset Password
         </form>
+
         <form class="form container__form">
             Subscribe
         </form>
+
         <form class="form container__form">
             Contact Big
         </form>
+
         <form class="form container__form">
             Contact
         </form>
+
         <form class="form container__form">
             Cart
         </form>
+
         <form class="form container__form">
             Shipping Form
         </form>
+
         <form class="form container__form">
             Payment
         </form>

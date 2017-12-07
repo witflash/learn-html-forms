@@ -1,12 +1,12 @@
 .container {
-    // display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     background-color: $color-bg;
+    font-family: $font-text;
     
-    &--page {
+    &_page {
         padding: 20px;
         margin: 0 auto;
+        min-width: 500px;
+        max-width: 1180px;
     }
 
     &__form {

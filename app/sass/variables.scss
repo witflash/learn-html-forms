@@ -1,9 +1,20 @@
 $grey-lighten:               #f2f5f8;
+$grey:                       #c6ccd2;
+$grey-dark:                  #b4bbc2;
+$grey-darken:                #383737;
 
 $color-bg:           white;
 $color-primary:      #65abd0;
 $color-secondary:    #24aa98;
+$color-fb:           #3162a2;
 
 $text-color--title:  $color-bg;
 
-$font-size: 1.6rem;
+$font-text: 'Cabin', sans-serif;
+
+$font-size: 16px;
+$font-size--h1: 32px;
+$font-size--h2: 18px;
+$font-size--h3: 14px;
+
+$fa-font-path: "../fonts"
