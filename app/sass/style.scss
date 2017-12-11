@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin:600');
 
-@import 'variables';
+@import '_variables';
 
-@import 'mixins/placeholder';
-
-@import '../blocks/container';
-@import '../blocks/form';
-@import '../blocks/input-field';
-@import '../blocks/header';
-@import '../blocks/content';
-@import '../blocks/button';
-@import '../blocks/divider';
-@import '../blocks/checkbox';
+@import '_main';
+@import 'blocks/_container';

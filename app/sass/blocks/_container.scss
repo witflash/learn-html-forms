@@ -1,0 +1,22 @@
+.container {
+	padding: 30px;
+	box-sizing: border-box;
+
+	&--double {
+		width: 50%;
+		float: left;
+	}
+
+	&--double_23 {
+		
+	}
+
+	&--double_13 {
+
+	}
+
+	&--triple {
+		width: 33.33%;
+		float: left;
+	}
+}
