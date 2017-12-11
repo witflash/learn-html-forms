@@ -1,20 +1,26 @@
 <form class="form form--signin_small" name="sign-in" method="POST">
-	<div class="header">
-		<h1 class="">Sign in</h1>
-		<p class=""><a href="#">Already Registered?</a></p>
+	<div class="header header--small">
+		<h2>Sign in</h2>
+		<p class="header__corner header__corner--blue"><a href="#">Already Registered?</a></p>
 	</div>
 	<div class="content">
-		<input type="text" name="login" class="" placeholder="E-mail or login">
-		<input type="password" name="password" class="" placeholder="Password">
-		<p>
+		<input type="text" name="login" class="input content__end" placeholder="E-mail or login">
+		<input type="password" name="password" class="input" placeholder="Password">
+		<p class="content__left">
 			<input type="checkbox" name="remember-pass" id="signin_small-remember">
 			<label for="signin_small-remember">Remember password?</label>
 		</p>
-		<input type="submit" class="button" value="Sign In">
-		<p>
-			<span>OR</span>
+		<input type="submit" class="button button--big_second content__end" value="Sign In">
+		<p class="content__center">
+			<span class="content__divider">OR</span>
+			<hr>
 		</p>
-		<input type="button" name="fb-log" class="" value="Login via Facebook">
-		<input type="button" name="tw-log" class="" value="Login via Twitter">
+		<div class="container container__btn">
+			<input type="button" name="fb-log" class="button button--fb_small" value="Facebook">
+		</div>
+		<div class="container container__btn_right">
+			<input type="button" name="tw-log" class="button button--tw_small" value="Twitter">
+		</div>
+		<p class="content__clear"></p>
 	</div>
 </form>

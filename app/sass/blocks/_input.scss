@@ -1,10 +1,15 @@
 .input {
     box-sizing: border-box;
     border-radius: 6px;
-    padding: 3%;
+    padding: 10px;
     width: 100%;
     border: 2px solid $grey;
     font-family: $font-text;
-    font-size: $font-size;
+    font-size: inherit;
     color: $grey-darken;
+    line-height: 24px;
+
+    @include placeholder {
+        color: $grey;
+    }
 }

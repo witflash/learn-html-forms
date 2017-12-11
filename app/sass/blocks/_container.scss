@@ -24,6 +24,7 @@
 
 	&--inner {
 		padding: 0;
+		padding-bottom: 30px;
 	}
 
 	&__btn {
@@ -37,10 +38,15 @@
 		padding: 0;
 		padding-left: 2%;
 		width: 50%;
+
+		&--small {
+			width: 44px;
+		}
 	}
 
 	&__p {
 		padding-bottom: 20px;
+		background-color: $color-sand;
 	}
 
 

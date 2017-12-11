@@ -35,4 +35,8 @@
         background: $color-secondary url("../img/bg2.jpg");
         background-size: cover;        
     }
+
+    &--small {
+        padding-bottom: 0;
+    }
 }
