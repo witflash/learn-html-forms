@@ -7,24 +7,30 @@
 </head>
 <body>
 	<div class="container container--double">
-		{% include "_form-sign.html" %}
+		{% include "_form--signup_big.html" %}
 	</div>
 	<div class="container container--double">
-		{% include "_form-sign.html" %}
+		{% include "_form--signin_big.html" %}
 	</div>
 	<div class="container container--triple">
-		{% include "_form-sign.html" %}
+		{% include "_form--signup_small.html" %}
 	</div>
 	<div class="container container--triple">
-		{% include "_form-sign.html" %}
+		{% include "_form--signin_small.html" %}
 	</div>
 	<div class="container container--triple">
-		<div class="container">
-			{% include "_form-sign.html" %}
+		<div class="container container--inner">
+			{% include "_form--reset.html" %}
 		</div>
-		<div class="container">
-			{% include "_form-sign.html" %}	
+		<div class="container container--inner">
+			{% include "_form--subscribe.html" %}	
 		</div>
-	</div>		
+	</div>
+	<div class="container container--double_23">
+		{% include "_form--contact.html" %}
+	</div>
+	<div class="container container--double_13">
+		 {% include "_form--contact_small.html" %}		
+	</div>
 </body>
 </html>

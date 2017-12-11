@@ -1,0 +1,52 @@
+<form class="form" name="contact" method="POST">
+	<div class="header">
+		<h1 class="">Contact</h1>
+	</div>
+	<div class="content">
+
+		<div>
+			<p>
+				<label for="input-name">Name</label>
+			</p>
+			<input type="text" name="name" id="input-name" class="" placeholder="Your Name">
+		</div>	
+
+		<div>
+			<p>
+				<label for="input-email">E-mail</label>
+			</p>
+			<input type="text" name="e-mail" id="input-email" class="" placeholder="Your E-mail">
+		</div>	
+
+		<div>
+			<p>
+				<label for="input-subject">Subject</label>
+			</p>
+			<input type="text" name="subject" id="input-subject" class="" placeholder="Enter Subject">
+		</div>	
+
+		<div>
+			<p>
+				<label for="choose-budget">Select Budget</label>
+			</p>
+			<select name="budget" id="choose-budget">
+				<option value="10k-15k">$10.000 - $15.000</option>
+				<option value="15k-20k">$15.000 - $20.000</option>
+				<option value="20k-25k">$20.000 - $25.000</option>
+			</select>
+		</div>	
+
+		<div>
+			<p>
+				<label for="input-message">Message</label>
+			</p>	
+			<input type="text-area" name="message" id="input-message" class="" placeholder="Some text">
+		</div>
+		
+		<div>
+			<input type="checkbox" name="send-me-copy" id="check-send">
+			<label for="check-send">Send me a copy</label>
+			<input type="submit" class="button" value="Send">
+		</div>
+	</div>
+</form>

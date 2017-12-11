@@ -1,5 +1,5 @@
 .container {
-	padding: 30px;
+	padding: 10px;
 	box-sizing: border-box;
 
 	&--double {
@@ -8,15 +8,21 @@
 	}
 
 	&--double_23 {
-		
+		@extend .container--double;
+		width: 66.66%;
 	}
 
 	&--double_13 {
-
+		@extend .container--double;
+		width: 33.33%;
 	}
 
 	&--triple {
 		width: 33.33%;
 		float: left;
+	}
+
+	&--inner {
+		padding: 0;
 	}
 }

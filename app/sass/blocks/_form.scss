@@ -1,0 +1,9 @@
+.form {
+    background-color: $grey-lighten;
+    border-radius: 6px;
+    padding: 30px;
+
+    label {
+        user-select: none;
+    }
+}

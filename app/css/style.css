@@ -1,17 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin:600");
 body {
   margin: 0 auto;
-  padding: 0;
+  padding: 30px;
   font-family: "Cabin", sans-serif;
   text-align: justify; }
 
 .container {
-  padding: 30px;
-  -webkit-box-sizing: border-box;
+  padding: 10px;
   box-sizing: border-box; }
-  .container--double {
+  .container--double, .container--double_23, .container--double_13 {
     width: 50%;
     float: left; }
+  .container--double_23 {
+    width: 66.66%; }
+  .container--double_13 {
+    width: 33.33%; }
   .container--triple {
     width: 33.33%;
     float: left; }
+  .container--inner {
+    padding: 0; }
+
+.form {
+  background-color: #f2f5f8;
+  border-radius: 6px;
+  padding: 30px; }
+  .form label {
+    user-select: none; }
