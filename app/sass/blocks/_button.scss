@@ -1,0 +1,28 @@
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-family: $font-text;
+    font-size: $font-size;
+    color: $color-bg;
+    background-color: $color-primary;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--fb {
+        background-color: $color-fb;
+    }
+
+    &--fb_small {
+        @extend .button--fb;
+        font-size: $font-size--h3;
+    }
+
+    &--tw_small {
+        font-size: $font-size--h3;
+    }
+}

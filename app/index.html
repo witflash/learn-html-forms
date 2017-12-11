@@ -8,13 +8,13 @@
 <body>
 	<div class="container container--double">
 		<form class="form form--signup_big" name="sign-up" method="POST">
-	<div class="header">
+	<div class="header header--signup_big">
 		<h1 class="">Sign up</h1>
-		<p class=""><a href="#">Already Registered?</a></p>
+		<p class="header__corner"><a href="#">Already Registered?</a></p>
 	</div>
 	<div class="content">
-		<input type="text" name="login" class="" placeholder="E-mail or login">
-		<input type="password" name="password" class="" placeholder="Password">
+		<input type="text" name="login" class="" placeholder="E-mail or login" class="input">
+		<input type="password" name="password" class="" placeholder="Password" class="input">
 		<p>
 			<a href="#">Forgot Password?</a>
 		</p>
@@ -22,20 +22,25 @@
 		<p>
 			<span>OR</span>
 		</p>
-		<input type="button" name="fb-log" class="" value="Login via Facebook">
-		<input type="button" name="tw-log" class="" value="Login via Twitter">
+		<div class="container container__btn">
+			<input type="button" name="fb-log" class="button button--fb" value="Login via Facebook">			
+		</div>
+		<div class="container container__btn_right">
+			<input type="button" name="tw-log" class="button" value="Login via Twitter">
+		</div>
+		<div class="content__clear"></div>
 	</div>
 </form>
 	</div>
 	<div class="container container--double">
 		<form class="form form--signin_big" name="sign-in" method="POST">
-	<div class="header">
+	<div class="header header--signin_big">
 		<h1 class="">Sign in</h1>
-		<p class=""><a href="#">Already Registered?</a></p>
+		<p class="header__corner"><a href="#">Already Registered?</a></p>
 	</div>
 	<div class="content">
-		<input type="text" name="login" class="" placeholder="E-mail or login">
-		<input type="password" name="password" class="" placeholder="Password">
+		<input type="text" name="login" class="" placeholder="E-mail or login" class="input">
+		<input type="password" name="password" class="" placeholder="Password" class="input">
 		<p>
 			<input type="checkbox" name="remember-pass" id="check-remember">			
 			<label for="check-remember">Remember password?</label>
@@ -44,33 +49,43 @@
 		<p>
 			<span>OR</span>
 		</p>
-		<input type="button" name="fb-log" class="" value="Login via Facebook">
-		<input type="button" name="tw-log" class="" value="Login via Twitter">
+		<div class="container container__btn">
+			<input type="button" name="fb-log" class="button button--fb" value="Login via Facebook">
+		</div>
+		<div class="container container__btn_right">
+			<input type="button" name="tw-log" class="button" value="Login via Twitter">
+		</div>
+		<div class="content__clear"></div>
 	</div>
 </form>
 	</div>
-	<div class="container container--triple">
-		<form class="form form--signup_big" name="sign-up" method="POST">
+	<div class="container container--tripple">
+		<form class="form form--signup_small" name="sign-up" method="POST">
 	<div class="header">
-		<h1 class="">Sign up</h1>
-		<p class=""><a href="#">Already Registered?</a></p>
+		<h2 class="">Sign up</h2>
+		<p class="header__corner header__corner--blue"><a href="#">Already Registered?</a></p>
 	</div>
 	<div class="content">
-		<input type="text" name="login" class="" placeholder="E-mail or login">
-		<input type="password" name="password" class="" placeholder="Password">
-		<p>
+		<input type="text" name="login" class="input" placeholder="E-mail or login">
+		<input type="password" name="password" class="input" placeholder="Password">
+		<p class="container__string">
 			<a href="#">Forgot Password?</a>
 		</p>
-		<input type="submit" class="button" value="Sign Up">
+		<input type="submit" class="button" value="Sign Up" class="button button--big_blue">
 		<p>
 			<span>OR</span>
 		</p>
-		<input type="button" name="fb-log" class="" value="Login via Facebook">
-		<input type="button" name="tw-log" class="" value="Login via Twitter">
+		<div class="container container__btn">
+			<input type="button" name="fb-log" class="button button--fb_small" value="Facebook">
+		</div>
+		<div class="container container__btn_right">
+			<input type="button" name="tw-log" class="button button--tw_small" value="Twitter">
+		</div>
+		<p class="content__clear"></p>
 	</div>
 </form>
 	</div>
-	<div class="container container--triple">
+	<div class="container container--tripple">
 		<form class="form form--signin_small" name="sign-in" method="POST">
 	<div class="header">
 		<h1 class="">Sign in</h1>
@@ -92,7 +107,7 @@
 	</div>
 </form>
 	</div>
-	<div class="container container--triple">
+	<div class="container container--tripple">
 		<div class="container container--inner">
 			<form class="form form--reset" name="reset-pass" method="POST">
 	<div class="header">
@@ -197,6 +212,136 @@
 		</p>
 	</div>
 </form>		
+	</div>
+	<div class="container">
+		<form class="form" name="cart-form" method="POST">
+	<h2 class="">Cart</h2>
+	<div>TABLE CART</div>
+	<p><a href="#">Continue Shopping</a></p>
+	<input type="submit" value="Order">
+</form>
+	</div>
+	<div class="container">
+		<form class="form" name="shipping-form" method="POST">
+	<h2 class="">Shipping address</h2>
+	<div class="content">
+		<div class="container container--tripple">
+			<p>
+				<label for="select-country">Select Country</label>
+			</p>
+			<select name="country" id="select-country">
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="ukraine">Ukraine</option>
+			</select>
+			<p>
+				<label for="select-city">Select City</label>
+			</p>
+			<select name="city" id="select-city">
+				<option value="california">California</option>
+			</select>
+		</div>
+		<div class="container container--tripple">
+			<p>
+				<label for="input-region">State, Region, Province</label>
+			</p>
+			<input type="text" name="region" id="input-region" class="">
+			<p>
+				<label for="input-zip">ZIP Code</label>
+			</p>
+			<input type="text" name="zip" id="input-zip" class="">
+		</div>
+		<div class="container container--tripple">
+			<p>
+				<label for="input-address1">Address 1</label>
+			</p>
+			<input type="text" name="address1" id="input-address1" class="">
+			<p>
+				<label for="input-address2">Address 2</label>
+			</p>
+			<input type="text" name="address2" id="input-address2" class="">
+		</div>
+		<p class="content__clear"></p>
+	</div>
+	
+	<h2 class="">Contact info</h2>
+
+	<div class="content">
+		<div class="container container--tripple">
+			<p>
+				<label for="input-fullname">Full Name</label>
+			</p>
+			<input type="text" name="full-name" id="input-fullname" class="">
+		</div>
+		<div class="container container--tripple">
+			<p>
+				<label for="input-info_email">Full Name</label>
+			</p>
+			<input type="text" name="email" id="input-info_email" class="">
+		</div>
+		<div class="container container--tripple">
+			<p>
+				<label for="input-info_phone">Phone</label>
+			</p>
+			<input type="text" name="phone" id="input-info_phone" class="">
+		</div>
+		<p class="content__clear"></p>		
+	</div>
+	<p>
+		<a href="#">Return to Cart</a>
+	</p>
+	<input type="submit" value="Payment Method">
+</form>
+	</div>
+	<div class="container">
+		<form class="form" name="payment-form" method="POST">
+	<div class="container container--double">
+		<h2 class="">Payment method</h2>
+		<p>Credit Card</p>
+		<input type="text" name="card-p1" placeholder="XXXX">
+		<input type="text" name="card-p2" placeholder="XXXX">
+		<input type="text" name="card-p3" placeholder="XXXX">
+		<input type="text" name="card-p4" placeholder="XXXX">
+		<p>
+			<label for="input-cardholder">Cardholder Name</label>
+		</p>
+		<input type="text" name="cardholder" id="input-cardholder">
+		<p>Expire</p>
+		<select name="month" id="select-month">
+			<option value="month">Month</option>
+			<option value="jan">January</option>
+			<option value="feb">February</option>
+		</select>
+		<select name="year" id="select-year">
+			<option value="year">Year</option>
+			<option value="2017">2017</option>
+			<option value="2016">2016</option>
+		</select>
+		<p>
+			<label for="input-cvv">CVV</label>
+		</p>
+		<input type="text" name="cvv" id="input-cvv">
+		<p>
+			<a href="#">Continue Shopping</a>
+		</p>
+	</div>
+
+	<div class="container container--double">
+		<h2 class="">Billing Address</h2>
+		<input type="checkbox" name="same-address" id="check-same">
+		<label for="check-same">Same as shipping address</label>
+		<p>
+			A hundred thousand grateful loves to your dear papa and mamma. 
+			Is ypur poor brother recovered of his rack-punch? 
+			Oh, dear! Oh, dear! How men should beware of wicked
+		</p>
+		<div>
+			<p>$496</p>
+			<input type="submit" value="Order">
+		</div>
+	</div>
+	<div class="content__clear"></div>		
+</form>
 	</div>
 </body>
 </html>

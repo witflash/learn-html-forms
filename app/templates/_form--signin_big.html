@@ -1,11 +1,11 @@
 <form class="form form--signin_big" name="sign-in" method="POST">
-	<div class="header">
+	<div class="header header--signin_big">
 		<h1 class="">Sign in</h1>
-		<p class=""><a href="#">Already Registered?</a></p>
+		<p class="header__corner"><a href="#">Already Registered?</a></p>
 	</div>
 	<div class="content">
-		<input type="text" name="login" class="" placeholder="E-mail or login">
-		<input type="password" name="password" class="" placeholder="Password">
+		<input type="text" name="login" class="" placeholder="E-mail or login" class="input">
+		<input type="password" name="password" class="" placeholder="Password" class="input">
 		<p>
 			<input type="checkbox" name="remember-pass" id="check-remember">			
 			<label for="check-remember">Remember password?</label>
@@ -14,7 +14,12 @@
 		<p>
 			<span>OR</span>
 		</p>
-		<input type="button" name="fb-log" class="" value="Login via Facebook">
-		<input type="button" name="tw-log" class="" value="Login via Twitter">
+		<div class="container container__btn">
+			<input type="button" name="fb-log" class="button button--fb" value="Login via Facebook">
+		</div>
+		<div class="container container__btn_right">
+			<input type="button" name="tw-log" class="button" value="Login via Twitter">
+		</div>
+		<div class="content__clear"></div>
 	</div>
 </form>

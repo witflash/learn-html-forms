@@ -2,5 +2,29 @@ body {
 	margin: 0 auto;
 	padding: 30px;
 	font-family: $font-text;
-	text-align: justify;
+	font-size: $font-size;
+	color: $grey-darken;
+}
+
+h1 {
+	margin: 0;
+	font-size: $font-size--h1;
+	text-transform: uppercase;
+	color: $color-bg;
+}
+
+h2 {
+	margin: 0;
+	font-size: $font-size--h2;
+	text-transform: uppercase;	
+	color: $grey-darken;
+}
+
+p {
+	margin: 0;
+}
+
+a, a:visited {
+	color: inherit;
+	text-decoration: none;
 }

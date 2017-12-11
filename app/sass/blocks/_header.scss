@@ -1,0 +1,38 @@
+.header {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+
+    &__h1 {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    &__corner {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: $font-size--h3;
+    
+        &--blue {
+            color: $color-primary;
+        }
+    }
+
+    &--signup_big {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 50px;
+        color: $color-bg;
+        text-align: center;
+        background: $color-primary url("../img/bg1.jpg");
+        background-size: cover;
+    }
+
+    &--signin_big {
+        @extend .header--signup_big;
+        background: $color-secondary url("../img/bg2.jpg");
+        background-size: cover;        
+    }
+}

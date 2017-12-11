@@ -7,6 +7,8 @@ $color-bg:           white;
 $color-primary:      #65abd0;
 $color-secondary:    #24aa98;
 $color-fb:           #3162a2;
+$color-text:         #393635;
+$color-labels:       $grey-dark;
 
 $text-color--title:  $color-bg;
 
@@ -14,7 +16,7 @@ $font-text: 'Cabin', sans-serif;
 
 $font-size: 16px;
 $font-size--h1: 32px;
-$font-size--h2: 18px;
+$font-size--h2: 16px;
 $font-size--h3: 14px;
 
 $fa-font-path: "../fonts"

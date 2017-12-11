@@ -1,0 +1,9 @@
+.content {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    
+    &__clear {
+        clear: both;
+    }
+}

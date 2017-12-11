@@ -1,10 +1,11 @@
 .container {
 	padding: 10px;
 	box-sizing: border-box;
+	float: left;
+	width: 100%;
 
 	&--double {
 		width: 50%;
-		float: left;
 	}
 
 	&--double_23 {
@@ -17,12 +18,30 @@
 		width: 33.33%;
 	}
 
-	&--triple {
+	&--tripple {
 		width: 33.33%;
-		float: left;
 	}
 
 	&--inner {
 		padding: 0;
 	}
+
+	&__btn {
+		padding: 0;
+		padding-right: 2%;
+		width: 50%;
+	}
+	
+	&__btn_right {
+		float: right;
+		padding: 0;
+		padding-left: 2%;
+		width: 50%;
+	}
+
+	&__p {
+		padding-bottom: 20px;
+	}
+
+
 }
