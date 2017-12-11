@@ -7,6 +7,7 @@ body {
 
 .container {
   padding: 30px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .container--double {
     width: 50%;
