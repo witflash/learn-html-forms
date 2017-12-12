@@ -1,22 +1,25 @@
 <form class="form" name="contact" method="POST">
-	<div class="header">
-		<h1 class="">Contact</h1>
+	<div class="header header--small">
+		<h2>Contact</h2>
 	</div>
 	<div class="content">
-		<p>
+		<p class="input__head">
 			<label for="contact_small-name">Name</label>
 		</p>
-		<input type="text" name="name" id="contact_small-name" class="" placeholder="Your Name">
-		<p>
+		<input type="text" name="name" id="contact_small-name" class="input content__end">
+		<p class="input__head">
 			<label for="contact_small-email">E-mail</label>
 		</p>
-		<input type="text" name="e-mail" id="contact_small-email" class="" placeholder="Your E-mail">
-		<p>
+		<input type="text" name="e-mail" id="contact_small-email" class="input content__end">
+		<p class="input__head">
 			<label for="contact_small-message">Message</label>
 		</p>	
-		<input type="text-area" name="message" id="contact_small-message" class="" placeholder="Some text">
-		<p>
-			<input type="submit" class="button" value="Send">
+		<textarea name="message" id="contact_small-message" rows="4" class="input content__end">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</textarea>
+		<p class="container__btn_right container__btn_right--align_r">
+			<input type="submit" class="button button--auto" value="Send">
 		</p>
+		<p class="content__clear"></p>
 	</div>
 </form>
+
+

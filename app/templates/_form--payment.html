@@ -1,48 +1,73 @@
 <form class="form" name="payment-form" method="POST">
 	<div class="container container--double">
-		<h2 class="">Payment method</h2>
-		<p>Credit Card</p>
-		<input type="text" name="card-p1" placeholder="XXXX">
-		<input type="text" name="card-p2" placeholder="XXXX">
-		<input type="text" name="card-p3" placeholder="XXXX">
-		<input type="text" name="card-p4" placeholder="XXXX">
-		<p>
-			<label for="input-cardholder">Cardholder Name</label>
-		</p>
-		<input type="text" name="cardholder" id="input-cardholder">
-		<p>Expire</p>
-		<select name="month" id="select-month">
-			<option value="month">Month</option>
-			<option value="jan">January</option>
-			<option value="feb">February</option>
-		</select>
-		<select name="year" id="select-year">
-			<option value="year">Year</option>
-			<option value="2017">2017</option>
-			<option value="2016">2016</option>
-		</select>
-		<p>
-			<label for="input-cvv">CVV</label>
-		</p>
-		<input type="text" name="cvv" id="input-cvv">
-		<p>
-			<a href="#">Continue Shopping</a>
-		</p>
-	</div>
+		<div class="header header--small">
+			<h2>Payment method</h2>
+		</div>
+		<div class="content">
+			<p class="input__head">Credit Card</p>
+			<div class="content__justify">
+				<input type="text" name="card-p1" placeholder="XXXX" class="input input--card">
+				<input type="text" name="card-p2" placeholder="XXXX" class="input input--card">
+				<input type="text" name="card-p3" placeholder="XXXX" class="input input--card">
+				<input type="text" name="card-p4" placeholder="XXXX" class="input input--card content__end">
+			</div>
+			
+			<p class="input__head">
+				<label for="input-cardholder">Cardholder Name</label>
+			</p>
+			<input type="text" name="cardholder" id="input-cardholder" class="input content__end">
 
-	<div class="container container--double">
-		<h2 class="">Billing Address</h2>
-		<input type="checkbox" name="same-address" id="check-same">
-		<label for="check-same">Same as shipping address</label>
-		<p>
-			A hundred thousand grateful loves to your dear papa and mamma. 
-			Is ypur poor brother recovered of his rack-punch? 
-			Oh, dear! Oh, dear! How men should beware of wicked
-		</p>
-		<div>
-			<p>$496</p>
-			<input type="submit" value="Order">
+			<p class="input__head">Expire</p>
+						<div class="container__btn content__end">
+				<select name="month" id="select-month" class="input input--orange">
+					<option value="month">Month</option>
+					<option value="jan">January</option>
+					<option value="feb">February</option>
+				</select>
+			</div>
+			<div class="container__btn content__end">
+				<select name="year" id="select-year" class="input input--orange">
+					<option value="year">Year</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+				</select>
+			</div>
+			
+			
+			<p class="input__head">
+				<label for="input-cvv">CVV</label>
+			</p>
+			<input type="text" name="cvv" id="input-cvv" class="input input--auto">
 		</div>
 	</div>
-	<div class="content__clear"></div>		
+	
+	<div class="container container--double">
+		<div class="header header--small">
+			<h2>Billing Address</h2>
+		</div>
+		<div class="content">
+			<p class="content__end">
+				<input type="checkbox" name="same-address" id="check-same">
+				<label for="check-same">Same as shipping address</label>
+			</p>
+			<p class="input__head content__end">
+				A hundred thousand grateful loves to your dear papa and mamma. 
+				Is ypur poor brother recovered of his rack-punch? 
+				Oh, dear! Oh, dear! How men should beware of wicked
+			</p>
+			<div class="content__corner_bottom">
+				<p>$496</p>
+			</div>
+		</div>
+	</div>	
+	<div class="content__clear"></div>
+	<div class="content">
+		<div class="container__btn header__corner_bottom">
+			<a href="#">Edit Shipping Address</a>
+		</div>
+		<div class="container__btn_right container__btn_right--align_r">
+			<input type="submit" value="Place Order" class="button button--auto">
+		</div>
+		<p class="content__clear"></p>
+	</div>
 </form>

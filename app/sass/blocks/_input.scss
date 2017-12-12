@@ -12,4 +12,45 @@
     @include placeholder {
         color: $grey;
     }
+    
+    option {
+        background: $color-bg;
+        color: $color-text;
+    }
+
+    &--blue {
+        background-color: $color-primary;
+        color: $color-bg;
+        border: none;
+        height: 48px;
+    }
+
+    &--orange {
+        background-color: $color-sand;
+        color: $color-bg;
+        border: none;
+        height: 48px;
+    }
+
+    &--area {
+        min-height: 40px;
+    }
+
+    &--card {
+        display: inline-block;
+        width: 24%;
+    }
+
+    &--auto {
+        display: inline-block;
+        width: 20%;
+    }
+
+    &__head {
+        display: block;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        color: $color-labels;
+        user-select: none;
+    }
 }

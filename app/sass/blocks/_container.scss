@@ -24,23 +24,40 @@
 
 	&--inner {
 		padding: 0;
-		padding-bottom: 30px;
+		padding-bottom: 20px;
+	}
+
+	&--inner_bottom {
+		padding: 0;
 	}
 
 	&__btn {
+		float: left;
+		box-sizing: border-box;
 		padding: 0;
 		padding-right: 2%;
 		width: 50%;
+
+		&--left {
+			float: left;
+			width: 75%;
+		}
 	}
 	
 	&__btn_right {
 		float: right;
+		box-sizing: border-box;		
 		padding: 0;
 		padding-left: 2%;
 		width: 50%;
 
-		&--small {
-			width: 44px;
+		&--square {
+			width: 20%;
+			text-align: right;
+		}
+
+		&--align_r {
+			text-align: right;
 		}
 	}
 

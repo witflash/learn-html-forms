@@ -2,8 +2,7 @@
     background-color: $grey-lighten;
     border-radius: 6px;
 
-    label, .labels {
+    label {
         user-select: none;
-        color: $color-labels;
     }
 }
