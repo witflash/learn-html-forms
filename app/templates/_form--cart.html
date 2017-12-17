@@ -1,12 +1,12 @@
-<form class="form" name="cart-form" method="POST">
+<form class="form" action="/action" name="cart-form" method="POST">
 	<div class="header header--small">
 		<h2>Cart</h2>
 	</div>
 
 	<div class="content">
 		
-		<div class="content">COOMING SOON...</div>
-				
+		{% include '_cart.html' %}
+
 		<div class="container__btn header__corner_bottom">
 			<a href="#">Continue Shopping</a>
 		</div>
