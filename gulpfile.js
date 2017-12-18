@@ -24,7 +24,7 @@ gulp.task('htmlbeautify', function(){
 });
 
 gulp.task('sass', ['nunjucks'], function () { // Создаем таск "sass"
-	return gulp.src('app/sass/style.scss') // Берем основной файл с импортами
+	return gulp.src('app/sass/**/*.scss') // Берем основной файл с импортами
 		.pipe(sass().on('error', function(err) {
             console.error(err.message);
             browserSync.notify(err.message, 3000); // Display error in the browser

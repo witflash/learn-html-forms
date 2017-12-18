@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin:600");
+@import url("https://fonts.googleapis.com/css?family=Cabin:700");
 body {
   margin: 0 auto;
   padding: 30px;
@@ -24,6 +24,18 @@ p {
 a, a:visited {
   color: inherit;
   text-decoration: none; }
+
+span.fa.fa-angle-left {
+  font-weight: bold;
+  padding-right: 10px; }
+
+span.fa.fa-angle-right {
+  font-weight: bold;
+  padding-left: 10px; }
+
+span.fa.fa-facebook,
+span.fa.fa-twitter {
+  padding-right: 10px; }
 
 .container {
   padding: 10px;
@@ -125,6 +137,10 @@ a, a:visited {
     color: #b4bbc2; }
   .content__left {
     text-align: left; }
+  .content__right {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 24px; }
   .content__divider {
     position: absolute;
     box-sizing: border-box;
@@ -164,6 +180,9 @@ a, a:visited {
   .button:hover {
     opacity: 0.8;
     cursor: pointer; }
+  .button--square {
+    background-color: #d9c26c;
+    font-size: 24px; }
   .button--big, .button--big_second, .button--big_reset {
     font-size: 18px; }
   .button--big_second {
@@ -237,6 +256,7 @@ a, a:visited {
 
 .cart__header {
   display: table-header-group;
+  font-size: 14px;
   color: #b4bbc2; }
 
 .cart__item {
@@ -314,6 +334,48 @@ a, a:visited {
 .cart__count-value {
   padding: 0 10px; }
 
-.cart__minus-sign {
-  display: block;
-  line-height: 26px; }
+.cart__sign {
+  display: inline-block;
+  line-height: 26px;
+  vertical-align: middle; }
+
+.cart__color {
+  padding-top: 5px;
+  color: #b4bbc2; }
+
+.cart__select-color {
+  display: inline-block;
+  margin: 0 2px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 100%;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  font-size: 9px;
+  color: white; }
+  .cart__select-color_yellow {
+    background-color: #d9c26c; }
+  .cart__select-color_blue {
+    background-color: #65abd0; }
+  .cart__select-color_green {
+    background-color: #24aa98; }
+  .cart__select-color_red {
+    background-color: #db7560; }
+  .cart__select-color_black {
+    background-color: #383737; }
+  .cart__select-color_brown {
+    background-color: #865447; }
+
+.cart__select-size {
+  display: inline-block;
+  width: 23px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: #c6ccd2;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  color: white; }

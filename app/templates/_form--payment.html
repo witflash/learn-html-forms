@@ -4,7 +4,7 @@
 			<h2>Payment method</h2>
 		</div>
 		<div class="content">
-			<p class="input__head">Credit Card</p>
+			<div class="input__head">Credit Card</div>
 			<div class="content__justify">
 				<input type="text" name="card-p1" placeholder="XXXX" class="input input--card">
 				<input type="text" name="card-p2" placeholder="XXXX" class="input input--card">
@@ -12,13 +12,11 @@
 				<input type="text" name="card-p4" placeholder="XXXX" class="input input--card content__end">
 			</div>
 			
-			<p class="input__head">
-				<label for="input-cardholder">Cardholder Name</label>
-			</p>
+			<label for="input-cardholder" class="input__head">Cardholder Name</label>
 			<input type="text" name="cardholder" id="input-cardholder" class="input content__end">
 
-			<p class="input__head">Expire</p>
-						<div class="container__btn content__end">
+			<div class="input__head">Expire</div>
+			<div class="container__btn content__end">
 				<select name="month" id="select-month" class="input input--orange">
 					<option value="month">Month</option>
 					<option value="jan">January</option>
@@ -34,9 +32,7 @@
 			</div>
 			
 			
-			<p class="input__head">
-				<label for="input-cvv">CVV</label>
-			</p>
+			<label for="input-cvv" class="input__head">CVV</label>
 			<input type="text" name="cvv" id="input-cvv" class="input input--auto">
 		</div>
 	</div>
@@ -46,28 +42,26 @@
 			<h2>Billing Address</h2>
 		</div>
 		<div class="content">
-			<p class="content__end">
+			<div class="content__end">
 				<input type="checkbox" name="same-address" id="check-same">
 				<label for="check-same">Same as shipping address</label>
-			</p>
+			</div>
 			<p class="input__head content__end">
 				A hundred thousand grateful loves to your dear papa and mamma. 
 				Is ypur poor brother recovered of his rack-punch? 
 				Oh, dear! Oh, dear! How men should beware of wicked
 			</p>
-			<div class="content__corner_bottom">
-				<p>$496</p>
-			</div>
 		</div>
 	</div>	
 	<div class="content__clear"></div>
+	<div class="content__right">$496</div>
 	<div class="content">
 		<div class="container__btn header__corner_bottom">
-			<a href="#">Edit Shipping Address</a>
+			<a href="#"><span class="fa fa-angle-left"></span>Edit Shipping Address</a>
 		</div>
 		<div class="container__btn_right container__btn_right--align_r">
-			<input type="submit" value="Place Order" class="button button--auto">
+			<button type="submit" class="button button--auto">Place Order<span class="fa fa-angle-right"></span></button>
 		</div>
-		<p class="content__clear"></p>
+		<div class="content__clear"></div>
 	</div>
 </form>
