@@ -6,3 +6,7 @@ node_modules
 #########
 .gulp-scss-cache
 .sass-cache
+
+#   IDE   #
+###########
+.vscode
