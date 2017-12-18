@@ -39,6 +39,7 @@ span.fa.fa-twitter {
 
 .container {
   padding: 10px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   width: 100%; }
@@ -57,6 +58,7 @@ span.fa.fa-twitter {
     padding: 0; }
   .container__btn {
     float: left;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     padding-right: 2%;
@@ -66,6 +68,7 @@ span.fa.fa-twitter {
       width: 75%; }
   .container__btn_right {
     float: right;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     padding-left: 2%;
@@ -83,15 +86,20 @@ span.fa.fa-twitter {
   background-color: #f2f5f8;
   border-radius: 6px; }
   .form label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none; }
 
 .header {
   position: relative;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px; }
   .header__h1 {
     position: relative;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
   .header__corner {
     position: absolute;
@@ -117,6 +125,7 @@ span.fa.fa-twitter {
     padding-bottom: 0; }
 
 .content {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   padding: 30px;
@@ -143,8 +152,10 @@ span.fa.fa-twitter {
     font-size: 24px; }
   .content__divider {
     position: absolute;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 10px;
     color: inherit;
@@ -205,6 +216,7 @@ span.fa.fa-twitter {
     padding-right: 30px; }
 
 .input {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 6px;
   padding: 10px;
@@ -245,9 +257,13 @@ span.fa.fa-twitter {
     width: 20%; }
   .input__head {
     display: block;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-bottom: 5px;
     color: #b4bbc2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none; }
 
 .cart {
